@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Playfair Display, serif;
+}
+
+body{
+    display: flex;
+    padding: 0 10px;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: #06beb6;
+}
+
+.container{
+    width:440px;
+    background: #fff;
+    border-radius: 7px;
+}
+
+.container h2{
+    font-size: 25px;
+    font-weight: 600;
+    padding: 16px 25px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+
+.container .word{
+    font-size: 33px;
+    font-weight: 500;
+    text-align: center;
+    margin-right: -24px;
+    letter-spacing: 24px;
+    text-transform: uppercase;
+    word-break: break-all;
+}
+
+.container .content{
+    margin: 25px 20px 35px;
+}
+
+.container .details{
+    margin: 25px 0 20px;
+}
+
+.details p{
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.content input{
+    width: 100%;
+    height: 60px;
+    outline: none;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #bfbfbf;
+
+}
+.content input::placeholder{
+    color: #aaa;
+}
+.content .buttons{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.buttons button{
+    color:#fff;
+    cursor: pointer;
+    width: calc(100%/2-8px);
+    padding: 15px 0px;
+    font-size: 17px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    border:none;
+}
+.buttons .refresh-word{
+    background: #535353
+}
+.buttons .check-word{
+    background: #06beb6;
+}
+.buttons .check-word:hover{
+    background: #058f88;
+}
+.buttons .refresh-word:hover{
+    background: #333;
+}
+.content input:focus::placeholder{
+    color: #bfbfbf;
+}
